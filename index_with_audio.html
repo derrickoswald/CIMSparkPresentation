@@ -27,7 +27,7 @@
 			<div class="slides">
 				<section><div style="font-size: 140px;">CIM + <img src="img/spark-logo-trademark.png" style="border-width: 0px; margin-bottom: -25px; margin-top: 0px; background-color: transparent; box-shadow: initial;"></div>
 <div>Network Analysis and Simulation using Apache Spark on Compute Clusters</div></section>
-                <section>
+                <section data-autoslide="16500">
                     <div><h2>Overview</h2></div>
                     <ul>
                     <li>CIM</li>
@@ -37,6 +37,11 @@
                     <li>Applications</li>
                     <li>Summary</li>
                     </ul>
+                    <div>
+                        <audio data-autoplay>
+                            <source src="media/overview.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
                     <aside class="notes">
                         This presentation covers
                         an introduction to the Common Information Model
@@ -47,9 +52,14 @@
                         finishing off with a few summary slides.
                     </aside>
                 </section>
-                <section>
+                <section data-autoslide="14000">
                     <div><h2>CIM</h2></div>
                     <img src="img/CIM.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                    <div>
+                        <audio data-autoplay>
+                            <source src="media/cim.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
                     <aside class="notes">
                         CIM comprises many IEC standards.
                         For our purposes it consists of a UML data model,
@@ -57,9 +67,14 @@
                         that can be used to exchange electrical network information between systems.
                     </aside>
                 </section>
-                <section>
+                <section data-autoslide="13000">
                     <div><h2>Model</h2></div>
                     <img src="img/model.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                    <div>
+                        <audio data-autoplay>
+                            <source src="media/model.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
                     <aside class="notes">
                         The CIM model has a class for nearly every germane
                         object of interest to electric utilities, including
@@ -185,28 +200,19 @@
                 <section>
                     <div><h2>Spark</h2></div>
                     <ul>
-                    <li>Cluster Computing</li>
-                    <li>HDFS</li>
+                    <li>Hadoop</li>
                     <li>RDD</li>
+                    <li>HDFS</li>
                     </ul>
-                </section>
-                <section>
-                    <div><h2>Cluster Computing</h2></div>
-                    <img src="img/spark.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
-                    <aside class="notes">
-                        Spark is normally executed on a cluster, usually Hadoop, in the cloud.
-                        The client communicates with the master node,
-                        which in turn coordinates the worker nodes.
-                        In addition to the Spark agent software,
-                        the master node runs at least two JVM programs,
-                        a namenode and a datanode.
-                        Workers run the Spark agent as slaves to the
-                        master node as well as the datanode program.
-                    </aside>
                 </section>
                 <section>
                     <div><h2>HDFS</h2></div>
                     <img src="img/hdfs.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                    <div>
+                        <audio data-autoplay>
+                            <source src="media/hdfs.mp3" type="audio/mp3">
+                        </audio>
+                    </div>
                     <aside class="notes">
                         HDFS uses part of each Datanode's disk
                         to create a federated virtual disk
