@@ -27,16 +27,20 @@
 			<div class="slides">
 				<section><div style="font-size: 140px;">CIM + <img src="img/spark-logo-trademark.png" style="border-width: 0px; margin-bottom: -25px; margin-top: 0px; background-color: transparent; box-shadow: initial;"></div>
 <div>Network Analysis and Simulation using Apache Spark on Compute Clusters</div></section>
-                <section>
-                    <div><h2>Overview</h2></div>
-                    <ul>
-                    <li>CIM</li>
-                    <li>Spark</li>
-                    <li>Architecture</li>
-                    <li>Reader</li>
-                    <li>Applications</li>
-                    <li>Summary</li>
-                    </ul>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Overview
+
+                        * Apache Spark
+                        * CIMReader
+                        * Use-Case – Asset Reports
+                        * GraphX & Pregel algorithm
+                        * Use-Case – Short Circuit Current
+                        * Use-Case – Smart Meter Placement
+                        * GridLAB-D
+                        * Use-Case – Maximum Feed-In Power
+                        * Summary
+                    </script>
                     <aside class="notes">
                         This presentation covers
                         an introduction to the Common Information Model
@@ -47,9 +51,14 @@
                         finishing off with a few summary slides.
                     </aside>
                 </section>
-                <section>
-                    <div><h2>CIM</h2></div>
-                    <img src="img/CIM.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                <section data-markdown>
+                    <script type="text/template">
+                        ## CIM
+                        <img src="img/CIM.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                        * immense set of standards
+                        * use only XML/RDF specifications
+                    </script>
                     <aside class="notes">
                         CIM comprises many IEC standards.
                         For our purposes it consists of a UML data model,
@@ -57,9 +66,18 @@
                         that can be used to exchange electrical network information between systems.
                     </aside>
                 </section>
-                <section>
-                    <div><h2>Model</h2></div>
-                    <img src="img/model.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Model
+                        <img src="img/model.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                        * over 1500 classes
+                          * electrical equipment
+                          * connectivity
+                          * customer metering
+                          * service and billing
+                          * operations and maintenance
+                    </script>
                     <aside class="notes">
                         The CIM model has a class for nearly every germane
                         object of interest to electric utilities, including
@@ -70,9 +88,17 @@
                     </aside>
                 </section>
                 <section>
-                    <section>
-                        <div><h2>Types of Information</h2></div>
-                        <img src="img/information.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                    <section data-markdown>
+                    <script type="text/template">
+                        ## Types of Information
+                        <img src="img/information.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                        * electrical characteristics and state
+                        * topological connectivity
+                        * asset details
+                        * spatial location and address
+                        * measurements
+                        * market
                         <aside class="notes">
                             Several types of pertinent information are encoded in the CIM file format,
                             including
@@ -84,6 +110,7 @@
                             - market operations and management
                             - etc. 
                         </aside>
+                    </script>
                     </section>
                     <section>
                         <div>Electrical</div>
@@ -182,17 +209,22 @@
                         </code></pre>
                     </section>
                 </section>
-                <section>
-                    <div><h2>Spark</h2></div>
-                    <ul>
-                    <li>Cluster Computing</li>
-                    <li>HDFS</li>
-                    <li>RDD</li>
-                    </ul>
-                </section>
-                <section>
-                    <div><h2>Cluster Computing</h2></div>
-                    <img src="img/spark.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Spark
+                    <img src="img/spark.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * Client
+                      * Scala
+                      * Java
+                      * Python
+                      * R
+                    * Cluster
+                      * usually Hadoop
+                      * standalone
+                      * Yarn
+                      * Mesos
+                    * spark-submit ⟹ send jar and command
                     <aside class="notes">
                         Spark is normally executed on a cluster, usually Hadoop, in the cloud.
                         The client communicates with the master node,
@@ -203,10 +235,40 @@
                         Workers run the Spark agent as slaves to the
                         master node as well as the datanode program.
                     </aside>
+                    </script>
                 </section>
-                <section>
-                    <div><h2>HDFS</h2></div>
-                    <img src="img/hdfs.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Cluster Computing with Spark
+                    <img src="img/software%20stack.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * Master
+                      * distribute jar
+                      * spawn driver
+                      * requests executors
+                    * Worker
+                      * spawn executor
+                    * Driver
+                      * runs command
+                      * uses executors
+                    <aside class="notes">
+                        TBD
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Hadoop Distributed File System
+                    <img src="img/hdfs.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * HDFS
+                      * uses part of local disk
+                      * organized in blocks
+                      * Name Node has directory
+                      * blocks distributed as needed
+                      * can be replicated (RAID)
+                      * workers use local blocks
+                      * without network penalty
                     <aside class="notes">
                         HDFS uses part of each Datanode's disk
                         to create a federated virtual disk
@@ -214,6 +276,56 @@
                         Access to data blocks that are local
                         to a worker incur no network overhead.
                     </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Resilient Distributed Dataset
+                    <img src="img/rdd.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * RDD
+                      * immutable ⟹ parallelizable
+                      * partitioned to
+                      * executors and workers
+                      * resilient (just a recipe)
+                      * higher-order function API
+                      * e.g. map, filter, fold
+                      * spill to disk
+                    <aside class="notes">
+                        TBD
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Pair RDD
+                    <img src="img/pair_rdd.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * tuples, usually Tuple2
+                    * usually primary key
+                    * RDD combining API, e.g. join, leftOuterJoin
+                    <aside class="notes">
+                        TBD
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Transformations & Actions
+                    <img src="img/transformations_and_actions.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * transformations
+                      * lazy & fast
+                      * memory ~100ns
+                      * map, filter, union
+                    * actions
+                      * eager & slow
+                      * network ~500µs
+                      * groupBy,  leftOuterJoin
+                    <aside class="notes">
+                        TBD
+                    </aside>
+                    </script>
                 </section>
 			</div>
 		</div>
@@ -226,6 +338,11 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				width: "100%",
+				height: "100%",
+				margin: 0,
+				minScale: 1,
+				maxScale: 1,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
