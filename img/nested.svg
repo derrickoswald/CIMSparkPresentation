@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg5122"
    version="1.1"
-   viewBox="0 0 176.16119 203.42958"
-   height="203.42958mm"
-   width="176.16119mm">
+   viewBox="0 0 315.68127 212.40402"
+   height="212.40402mm"
+   width="315.68127mm">
   <defs
      id="defs5116">
     <pattern
@@ -1418,224 +1418,227 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-2.3279936e-7,-93.570409)"
+     transform="translate(66.013665,-84.595975)"
      id="layer1">
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.00387287;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4679"
-       width="112.08511"
-       height="112.35201"
-       x="1.7936521"
-       y="101.25665" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="0.6640318"
-       y="98.39492"
-       id="text4683"><tspan
-         id="tspan4681"
-         x="0.6640318"
-         y="98.39492"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.3499999px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332">Switch: RDD[Switch]</tspan></text>
-    <rect
-       ry="3.7025759"
-       y="103.96192"
-       x="4.7151113"
-       height="28.880089"
-       width="105.69875"
-       id="rect5688"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       id="text5692"
-       y="109.32923"
-       x="6.808435"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         id="tspan5694"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         y="109.32923"
-         x="6.808435">Switch id=&quot;TEI1932&quot;, normalOpen=false</tspan></text>
-    <rect
-       ry="3.157407"
-       y="110.9454"
-       x="7.1965785"
-       height="19.51726"
-       width="100.25327"
-       id="rect5698"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       id="text5702"
-       y="116.03894"
-       x="8.9713326"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         id="tspan5704"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         y="116.03894"
-         x="8.9713326">ConductingEquipment</tspan></text>
-    <rect
-       ry="3.1242454"
-       y="117.89767"
-       x="9.3942881"
-       height="10.335831"
-       width="95.224564"
-       id="rect5714"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="11.728036"
-       y="123.22311"
-       id="text5728"><tspan
-         x="11.728036"
-         y="123.22311"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan5726">Equipment</tspan></text>
-    <rect
-       y="125.539"
-       x="12.393954"
-       height="0.71852654"
-       width="88.717232"
-       id="rect5730"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5763"
-       width="105.69875"
-       height="28.880089"
-       x="4.7151113"
-       y="137.29961"
-       ry="3.7025759" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="6.808435"
-       y="142.66692"
-       id="text5767"><tspan
-         x="6.808435"
-         y="142.66692"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan5765">Switch id=&quot;TEI7564&quot;, normalOpen=false</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5769"
-       width="100.25327"
-       height="19.51726"
-       x="7.1965785"
-       y="144.28307"
-       ry="3.157407" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="8.9713326"
-       y="149.3766"
-       id="text5773"><tspan
-         x="8.9713326"
-         y="149.3766"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan5771">ConductingEquipment</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5775"
-       width="95.224564"
-       height="10.335831"
-       x="9.3942881"
-       y="151.23534"
-       ry="3.1242454" />
-    <text
-       id="text5779"
-       y="156.56071"
-       x="11.728036"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         id="tspan5777"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         y="156.56071"
-         x="11.728036">Equipment</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5781"
-       width="88.717232"
-       height="0.71852654"
-       x="12.393954"
-       y="158.87656" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5804"
-       width="105.69875"
-       height="28.880089"
-       x="4.7151113"
-       y="171.16629"
-       ry="3.7025759" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="6.808435"
-       y="176.5336"
-       id="text5808"><tspan
-         x="6.808435"
-         y="176.5336"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan5806">Switch id=&quot;TEI9231&quot;, normalOpen=false</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5810"
-       width="100.25327"
-       height="19.51726"
-       x="7.1965785"
-       y="178.14975"
-       ry="3.157407" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="8.9713326"
-       y="183.24329"
-       id="text5814"><tspan
-         x="8.9713326"
-         y="183.24329"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan5812">ConductingEquipment</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5816"
-       width="95.224564"
-       height="10.335831"
-       x="9.3942881"
-       y="185.10202"
-       ry="3.1242454" />
-    <text
-       id="text5820"
-       y="190.42741"
-       x="11.728036"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         id="tspan5818"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         y="190.42741"
-         x="11.728036">Equipment</tspan></text>
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect5822"
-       width="88.717232"
-       height="0.71852654"
-       x="12.393954"
-       y="192.74326" />
-    <path
-       id="rect5845"
-       d="m 4.7151108,212.86768 v -3.04534 c 0,-1.77208 1.651349,-3.70258 3.702576,-3.70258 H 106.71129 c 2.05123,0 3.70258,1.65135 3.70258,3.70258 v 3.28161"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="6.808435"
-       y="211.28285"
-       id="text5849"><tspan
-         x="6.808435"
-         y="211.28285"
-         style="font-size:4.93888903px;stroke-width:0.26458332"
-         id="tspan5847">Switch id=&quot;TEI1409&quot;, normalOpen=false</tspan></text>
     <g
-       transform="matrix(0.54108951,0,0,0.54108951,23.974196,127.54747)"
+       id="g7624">
+      <rect
+         y="98.632217"
+         x="2.0098631"
+         height="111.91856"
+         width="111.65269"
+         id="rect4679"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4683"
+         y="95.770485"
+         x="0.6640318"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.3499999px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332"
+           y="95.770485"
+           x="0.6640318"
+           id="tspan4681">Switch: RDD[Switch]</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5688"
+         width="105.69875"
+         height="28.880089"
+         x="4.7151113"
+         y="101.33749"
+         ry="3.7025759" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="6.808435"
+         y="106.7048"
+         id="text5692"><tspan
+           x="6.808435"
+           y="106.7048"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5694">Switch id=&quot;TEI1932&quot;, normalOpen=false</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5698"
+         width="100.25327"
+         height="19.51726"
+         x="7.1965785"
+         y="108.32096"
+         ry="3.157407" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="8.9713326"
+         y="113.41451"
+         id="text5702"><tspan
+           x="8.9713326"
+           y="113.41451"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5704">ConductingEquipment</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5714"
+         width="95.224564"
+         height="10.335831"
+         x="9.3942881"
+         y="115.27323"
+         ry="3.1242454" />
+      <text
+         id="text5728"
+         y="120.59867"
+         x="11.728036"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5726"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="120.59867"
+           x="11.728036">Equipment</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5730"
+         width="88.717232"
+         height="0.71852654"
+         x="12.393954"
+         y="122.91457" />
+      <rect
+         ry="3.7025759"
+         y="134.67517"
+         x="4.7151113"
+         height="28.880089"
+         width="105.69875"
+         id="rect5763"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5767"
+         y="140.04248"
+         x="6.808435"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5765"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="140.04248"
+           x="6.808435">Switch id=&quot;TEI7564&quot;, normalOpen=false</tspan></text>
+      <rect
+         ry="3.157407"
+         y="141.65863"
+         x="7.1965785"
+         height="19.51726"
+         width="100.25327"
+         id="rect5769"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5773"
+         y="146.75217"
+         x="8.9713326"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5771"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="146.75217"
+           x="8.9713326">ConductingEquipment</tspan></text>
+      <rect
+         ry="3.1242454"
+         y="148.6109"
+         x="9.3942881"
+         height="10.335831"
+         width="95.224564"
+         id="rect5775"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="11.728036"
+         y="153.93628"
+         id="text5779"><tspan
+           x="11.728036"
+           y="153.93628"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5777">Equipment</tspan></text>
+      <rect
+         y="156.25212"
+         x="12.393954"
+         height="0.71852654"
+         width="88.717232"
+         id="rect5781"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         ry="3.7025759"
+         y="168.54185"
+         x="4.7151113"
+         height="28.880089"
+         width="105.69875"
+         id="rect5804"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5808"
+         y="173.90916"
+         x="6.808435"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5806"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="173.90916"
+           x="6.808435">Switch id=&quot;TEI9231&quot;, normalOpen=false</tspan></text>
+      <rect
+         ry="3.157407"
+         y="175.52531"
+         x="7.1965785"
+         height="19.51726"
+         width="100.25327"
+         id="rect5810"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5814"
+         y="180.61885"
+         x="8.9713326"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5812"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="180.61885"
+           x="8.9713326">ConductingEquipment</tspan></text>
+      <rect
+         ry="3.1242454"
+         y="182.47758"
+         x="9.3942881"
+         height="10.335831"
+         width="95.224564"
+         id="rect5816"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="11.728036"
+         y="187.80298"
+         id="text5820"><tspan
+           x="11.728036"
+           y="187.80298"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5818">Equipment</tspan></text>
+      <rect
+         y="190.11882"
+         x="12.393954"
+         height="0.71852654"
+         width="88.717232"
+         id="rect5822"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 4.7151108,210.24324 v -3.04534 c 0,-1.77208 1.651349,-3.70258 3.702576,-3.70258 H 106.71129 c 2.05123,0 3.70258,1.65135 3.70258,3.70258 v 3.28161 z"
+         id="rect5845" />
+      <text
+         id="text5849"
+         y="208.65842"
+         x="6.808435"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5847"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="208.65842"
+           x="6.808435">Switch id=&quot;TEI1409&quot;, normalOpen=false</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.54108951,0,0,0.54108951,34.55753,127.54747)"
        id="g9059">
       <g
          transform="translate(-44.307264,16.16912)"
@@ -2965,270 +2968,517 @@
     <text
        id="text9063"
        y="226.53217"
-       x="15.90486"
+       x="26.488192"
        style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="font-size:4.93888903px;stroke-width:0.26458332"
          y="226.53217"
-         x="15.90486"
+         x="26.488192"
          id="tspan9061">Switch</tspan></text>
     <text
        id="text9067"
        y="243.9567"
-       x="42.602352"
+       x="53.185696"
        style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="font-size:4.93888903px;stroke-width:0.26458332"
          y="243.9567"
-         x="42.602352"
+         x="53.185696"
          id="tspan9065">ConductingEquipment</tspan></text>
     <text
        id="text9071"
        y="256.60986"
-       x="86.895386"
+       x="97.478729"
        style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="stroke-width:0.26458332"
          y="256.60986"
-         x="86.895386"
+         x="97.478729"
          id="tspan9069">Equipment</tspan></text>
     <text
        id="text9075"
        y="265.58838"
-       x="112.177"
+       x="122.76036"
        style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="stroke-width:0.26458332"
          y="265.58838"
-         x="112.177"
+         x="122.76036"
          id="tspan9073">PowerSystemResource</tspan></text>
     <text
        id="text9079"
        y="273.73993"
-       x="136.1591"
+       x="146.74239"
        style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="stroke-width:0.26458332"
          y="273.73993"
-         x="136.1591"
+         x="146.74239"
          id="tspan9077">IdentifiedObject</tspan></text>
     <g
-       id="g5174">
-      <rect
-         ry="0"
-         y="133.39169"
-         x="125.75173"
-         height="19.934649"
-         width="49.756783"
-         id="rect5113"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         id="path5115"
-         d="m 125.52563,140.13348 h 49.85691"
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 125.52563,144.79634 H 175.2417"
-         id="path5117" />
-      <path
-         id="path5119"
-         d="m 125.52563,148.99291 h 50.13858"
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text5123"
-         y="137.22473"
-         x="128.33098"
-         style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
-         xml:space="preserve"
-         transform="scale(0.9937871,1.0062517)"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927"
+       transform="translate(-191.10863)"
+       id="g5226">
+      <g
+         id="g5163">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.31353354;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect5113"
+           width="49.756783"
+           height="19.934649"
+           x="125.75173"
+           y="133.39169"
+           ry="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 125.52563,140.13348 h 49.85691"
+           id="path5115" />
+        <path
+           id="path5117"
+           d="M 125.52563,144.79634 H 175.2417"
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 125.52563,148.99291 h 50.13858"
+           id="path5119" />
+        <text
+           transform="scale(0.99378712,1.0062517)"
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
+           x="127.59344"
            y="137.22473"
-           x="128.33098"
-           id="tspan5121">ConductingEquipment</tspan></text>
-    </g>
-    <g
-       id="g5160">
-      <rect
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect5156"
-         width="49.756783"
-         height="19.934649"
-         x="125.75173"
-         y="101.21819"
-         ry="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 125.52563,107.95998 h 49.85691"
-         id="path5158" />
-      <path
-         id="path5160"
-         d="M 125.52563,112.62283 H 175.2417"
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 125.52563,116.8194 h 50.13858"
-         id="path5162" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
-         x="144.59119"
-         y="105.25111"
-         id="text5166"
-         transform="scale(0.9937871,1.0062517)"><tspan
-           id="tspan5164"
-           x="144.59119"
+           id="text5123"><tspan
+             id="tspan5121"
+             x="127.59344"
+             y="137.22473"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927">PowerSystemResource</tspan></text>
+      </g>
+      <g
+         id="g5149">
+        <rect
+           ry="0"
+           y="101.21819"
+           x="125.75173"
+           height="19.934649"
+           width="49.756783"
+           id="rect5156"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.31353354;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           id="path5158"
+           d="m 125.52563,107.95998 h 49.85691"
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 125.52563,112.62283 H 175.2417"
+           id="path5160" />
+        <path
+           id="path5162"
+           d="m 125.52563,116.8194 h 50.13858"
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           transform="scale(0.99378713,1.0062517)"
+           id="text5166"
            y="105.25111"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927">Switch</tspan></text>
-    </g>
-    <g
-       transform="matrix(0.87024845,0,0,0.8811636,15.839717,11.946826)"
-       id="g5196">
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="path5188"
-         d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 154.79745,129.45785 v 8.41554"
-         id="path5192" />
-    </g>
-    <g
-       id="g5188">
-      <rect
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect5216"
-         width="49.756783"
-         height="19.934649"
-         x="125.75173"
-         y="165.56519"
-         ry="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 125.52563,172.30699 h 49.85691"
-         id="path5218" />
-      <path
-         id="path5220"
-         d="M 125.52563,176.96984 H 175.2417"
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 125.52563,181.16641 h 50.13858"
-         id="path5222" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
-         x="140.16458"
-         y="169.19833"
-         id="text5226"
-         transform="scale(0.9937871,1.0062517)"><tspan
-           id="tspan5224"
-           x="140.16458"
-           y="169.19833"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927">Equipment</tspan></text>
-    </g>
-    <g
-       id="g5234"
-       transform="matrix(0.87024845,0,0,0.8811636,15.839717,44.120327)">
-      <path
-         d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z"
-         id="path5230"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         id="path5232"
-         d="m 154.79745,129.45785 v 8.41554"
-         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-    <g
-       id="g5202">
-      <rect
-         ry="0"
-         y="197.73868"
-         x="125.75173"
-         height="19.934649"
-         width="49.756783"
-         id="rect5268"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         id="path5270"
-         d="m 125.52563,204.48049 h 49.85691"
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 125.52563,209.14334 H 175.2417"
-         id="path5272" />
-      <path
-         id="path5274"
-         d="m 125.52563,213.33991 h 50.13858"
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text5278"
-         y="201.17194"
-         x="127.65332"
-         style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
-         xml:space="preserve"
-         transform="scale(0.9937871,1.0062517)"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927"
-           y="201.17194"
-           x="127.65332"
-           id="tspan5276">PowerSystemResource</tspan></text>
-    </g>
-    <g
-       transform="matrix(0.87024845,0,0,0.8811636,15.839717,76.293833)"
-       id="g5286">
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="path5282"
-         d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 154.79745,129.45785 v 8.41554"
-         id="path5284" />
-    </g>
-    <g
-       id="g5210">
-      <rect
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect5320"
-         width="49.756783"
-         height="19.934649"
-         x="125.75173"
-         y="229.91219"
-         ry="0" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 125.52563,236.65399 h 49.85691"
-         id="path5322" />
-      <path
-         id="path5324"
-         d="M 125.52563,241.31685 H 175.2417"
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 125.52563,245.51342 h 50.13858"
-         id="path5326" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
-         x="134.57861"
-         y="233.14554"
-         id="text5330"
-         transform="scale(0.9937871,1.0062517)"><tspan
-           id="tspan5328"
            x="134.57861"
+           style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927"
+             y="105.25111"
+             x="134.57861"
+             id="tspan5164">IdentifiedObject</tspan></text>
+      </g>
+      <g
+         id="g5196"
+         transform="matrix(0.87024845,0,0,0.8811636,15.839717,11.946826)">
+        <path
+           d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z"
+           id="path5188"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           id="path5192"
+           d="m 154.79745,129.45785 v 8.41554"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         id="g5248"
+         transform="matrix(0.87024845,0,0,0.8811636,16.234782,11.946826)">
+        <rect
+           ry="0"
+           y="174.3358"
+           x="125.84561"
+           height="22.623096"
+           width="57.175377"
+           id="rect5216"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           id="path5218"
+           d="m 125.5858,181.98682 h 57.29043"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 125.5858,187.27852 h 57.12859"
+           id="path5220" />
+        <path
+           id="path5222"
+           d="m 125.5858,192.04105 h 57.6141"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           id="text5226"
+           y="179.65936"
+           x="141.40671"
+           style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.23333311px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332"
+             y="179.65936"
+             x="141.40671"
+             id="tspan5224">Equipment</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.87024845,0,0,0.8811636,15.839717,44.120327)"
+         id="g5234">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path5230"
+           d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 154.79745,129.45785 v 8.41554"
+           id="path5232" />
+      </g>
+      <g
+         id="g5177">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.31353354;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect5268"
+           width="49.756783"
+           height="19.934649"
+           x="125.75173"
+           y="197.73868"
+           ry="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 125.52563,204.48049 h 49.85691"
+           id="path5270" />
+        <path
+           id="path5272"
+           d="M 125.52563,209.14334 H 175.2417"
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 125.52563,213.33991 h 50.13858"
+           id="path5274" />
+        <text
+           transform="scale(0.99378712,1.0062517)"
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
+           x="128.36092"
+           y="201.17194"
+           id="text5278"><tspan
+             id="tspan5276"
+             x="128.36092"
+             y="201.17194"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927">ConductingEquipment</tspan></text>
+      </g>
+      <g
+         id="g5286"
+         transform="matrix(0.87024845,0,0,0.8811636,15.839717,76.293833)">
+        <path
+           d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z"
+           id="path5282"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           id="path5284"
+           d="m 154.79745,129.45785 v 8.41554"
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <g
+         id="g5141">
+        <rect
+           ry="0"
+           y="229.91219"
+           x="125.75173"
+           height="19.934649"
+           width="49.756783"
+           id="rect5320"
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.31353354;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           id="path5322"
+           d="m 125.52563,236.65399 h 49.85691"
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 125.52563,241.31685 H 175.2417"
+           id="path5324" />
+        <path
+           id="path5326"
+           d="m 125.52563,245.51342 h 50.13858"
+           style="fill:none;stroke:#000000;stroke-width:0.87568903;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           transform="scale(0.99378712,1.0062517)"
+           id="text5330"
            y="233.14554"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927">IdentifiedObject</tspan></text>
+           x="144.59117"
+           style="font-style:normal;font-weight:normal;font-size:4.32493067px;line-height:5.79231787px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2316927"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70708323px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.2316927"
+             y="233.14554"
+             x="144.59117"
+             id="tspan5328">Switch</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.87024845,0,0,0.8811636,15.839717,108.46739)"
+         id="g5338">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path5334"
+           d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 154.79745,129.45785 v 8.41554"
+           id="path5336" />
+      </g>
     </g>
     <g
-       id="g5338"
-       transform="matrix(0.87024845,0,0,0.8811636,15.839717,108.46739)">
+       id="g7663">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5457"
+         width="111.65269"
+         height="111.91856"
+         x="119.95512"
+         y="98.632217" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="118.60929"
+         y="89.420486"
+         id="text5461"><tspan
+           id="tspan5459"
+           x="118.60929"
+           y="89.420486"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.3499999px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332">ConductingEquipment:</tspan><tspan
+           x="118.60929"
+           y="96.035065"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.3499999px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.26458332"
+           id="tspan5531">RDD[ConductingEquipment]</tspan></text>
+      <rect
+         ry="3.7025759"
+         y="101.33749"
+         x="122.6604"
+         height="28.880089"
+         width="105.69875"
+         id="rect5463"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5467"
+         y="106.70479"
+         x="124.75373"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5465"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="106.70479"
+           x="124.75373">ConductingEquipment id=&quot;TEI1932&quot;</tspan></text>
+      <rect
+         ry="3.157407"
+         y="108.32095"
+         x="125.14188"
+         height="19.51726"
+         width="100.25327"
+         id="rect5469"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text5473"
+         y="113.41451"
+         x="126.91655"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5471"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="113.41451"
+           x="126.91655">Equipment</tspan></text>
+      <rect
+         ry="3.1242454"
+         y="115.27322"
+         x="127.33956"
+         height="10.335831"
+         width="95.224564"
+         id="rect5475"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="129.67328"
+         y="120.59867"
+         id="text5479"><tspan
+           x="129.67328"
+           y="120.59867"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5477">PowerSystemResource</tspan></text>
+      <rect
+         y="122.91456"
+         x="130.33919"
+         height="0.71852654"
+         width="88.717232"
+         id="rect5481"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5483"
+         width="105.69875"
+         height="28.880089"
+         x="122.6604"
+         y="134.67516"
+         ry="3.7025759" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="124.75373"
+         y="140.04247"
+         id="text5487"><tspan
+           x="124.75373"
+           y="140.04247"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5485">ConductingEquipment id=&quot;TEI7564&quot;</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5489"
+         width="100.25327"
+         height="19.51726"
+         x="125.14188"
+         y="141.65862"
+         ry="3.157407" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="126.91655"
+         y="146.75215"
+         id="text5493"><tspan
+           x="126.91655"
+           y="146.75215"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5491">Equipment</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5495"
+         width="95.224564"
+         height="10.335831"
+         x="127.33956"
+         y="148.61089"
+         ry="3.1242454" />
+      <text
+         id="text5499"
+         y="153.93626"
+         x="129.67328"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5497"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="153.93626"
+           x="129.67328">PowerSystemResource</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5501"
+         width="88.717232"
+         height="0.71852654"
+         x="130.33919"
+         y="156.25211" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5503"
+         width="105.69875"
+         height="28.880089"
+         x="122.6604"
+         y="168.54184"
+         ry="3.7025759" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="124.75373"
+         y="173.90915"
+         id="text5507"><tspan
+           x="124.75373"
+           y="173.90915"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5505">ConductingEquipment id=&quot;TEI9231&quot;</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5509"
+         width="100.25327"
+         height="19.51726"
+         x="125.14188"
+         y="175.5253"
+         ry="3.157407" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="126.91655"
+         y="180.61884"
+         id="text5513"><tspan
+           x="126.91655"
+           y="180.61884"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5511">Equipment</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5515"
+         width="95.224564"
+         height="10.335831"
+         x="127.33956"
+         y="182.47757"
+         ry="3.1242454" />
+      <text
+         id="text5519"
+         y="187.80296"
+         x="129.67328"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           id="tspan5517"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           y="187.80296"
+           x="129.67328">PowerSystemResource</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect5521"
+         width="88.717232"
+         height="0.71852654"
+         x="130.33919"
+         y="190.1188" />
       <path
-         d="m 154.88727,125.45391 2.31124,4.00318 -4.62248,0 z"
-         id="path5334"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         id="path5336"
-         d="m 154.79745,129.45785 v 8.41554"
-         style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         id="path5523"
+         d="m 122.66054,210.24324 v -3.04534 c 0,-1.77208 1.65137,-3.70258 3.7026,-3.70258 h 98.29413 c 2.05122,0 3.70257,1.65135 3.70257,3.70258 v 3.28161 z"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.3499999px;line-height:6.61458349px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="124.75373"
+         y="208.6584"
+         id="text5527"><tspan
+           x="124.75373"
+           y="208.6584"
+           style="font-size:4.93888903px;stroke-width:0.26458332"
+           id="tspan5525">ConductingEquipment id=&quot;TEI1409&quot;</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.53618764,0,0,0.53618764,108.22256,57.615832)"
+       id="g7674">
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:29.25354385;stroke-opacity:1"
+         id="path7665"
+         cx="242.49141"
+         cy="120.76807"
+         r="3.2042165" />
+      <circle
+         r="3.2042165"
+         cy="120.76807"
+         cx="251.41742"
+         id="circle7667"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:29.25354385;stroke-opacity:1" />
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:29.25354385;stroke-opacity:1"
+         id="circle7669"
+         cx="260.34344"
+         cy="120.76807"
+         r="3.2042165" />
     </g>
   </g>
 </svg>
