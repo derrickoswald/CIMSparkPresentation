@@ -11,8 +11,10 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff; }
+  background-image: url("../../img/9codelogo.png"), linear-gradient(#c2ccd4, #fff);
+  background-size: 5%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 1em top 1em, 0% 0%; }
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
