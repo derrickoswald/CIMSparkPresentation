@@ -25,12 +25,18 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section><div style="font-size: 140px;">CIM + <img src="img/spark-logo-trademark.png" style="border-width: 0px; margin-bottom: -25px; margin-top: 0px; background-color: transparent; box-shadow: initial;"></div>
-<div>Network Analysis and Simulation using Apache Spark on Compute Clusters</div></section>
+				<section data-markdown>
+                    <script type="text/template">
+                        <img src="img/splash_page.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
+
+                        # Network Analysis and Simulation using Apache Spark on Compute Clusters
+                    </script>
+                </section>
                 <section data-markdown>
                     <script type="text/template">
                         ## Overview
 
+                        * CIM
                         * Apache Spark
                         * CIMReader
                         * Use-Case – Asset Reports
@@ -58,6 +64,7 @@
 
                         * immense set of standards
                         * use only XML/RDF specifications
+                        * interchange between systems
                     </script>
                     <aside class="notes">
                         CIM comprises many IEC standards.
@@ -214,85 +221,145 @@
                     ## Spark
                     <img src="img/spark.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
 
-                    * Client
-                      * Scala
-                      * Java
-                      * Python
-                      * R
                     * Cluster
                       * usually Hadoop
-                      * standalone
-                      * Yarn
-                      * Mesos
-                    * spark-submit ⟹ send jar and command
+                      * standalone (or Yarn, Mesos)
+                    * API
+                      * Scala
+                      * Python
+                      * R
+                      * Java
+
+                    $ spark-submit ⟹ java jar and command
+
                     <aside class="notes">
-                        Spark is normally executed on a cluster, usually Hadoop, in the cloud.
-                        The client communicates with the master node,
-                        which in turn coordinates the worker nodes.
-                        In addition to the Spark agent software,
-                        the master node runs at least two JVM programs,
-                        a namenode and a datanode.
-                        Workers run the Spark agent as slaves to the
-                        master node as well as the datanode program.
+                        Apache Spark is normally executed on a cluster,
+                        usually using Hadoop,
+                        and usually in a cloud environment,
+                        such as Amazon Web Services or Azure.
+                        Out of the box, Spark provides
+                        interactive command line interpeters
+                        for Scala, Python and R executed
+                        for example,
+                        from a secure shell on the master.
+                        Graphical user interfaces to Spark in a browser
+                        such as RStudio, Zeppelin, Jupiter, etc.
+                        must be installed separately.
+                        The Spark API is available for Scala, Python and R,
+                        and of course for Java,
+                        which it all comes down to in the end.
+                        For batch oriented use-cases,
+                        the spark-submit command
+                        is executed on the master node,
+                        usually specifying a custom Java jar file
+                        and a command line.
                     </aside>
                     </script>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
-                    ## Cluster Computing with Spark
-                    <img src="img/software%20stack.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+                    ## Software Stack
+                    <img src="img/software_stack.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
 
                     * Master
-                      * distribute jar
-                      * spawn driver
-                      * requests executors
                     * Worker
-                      * spawn executor
                     * Driver
-                      * runs command
-                      * uses executors
+                    * Executor
+                    * Name Node
+                    * Data Node
+
                     <aside class="notes">
-                        TBD
+                        The main moving parts on the cluster are all
+                        Java Virtual Machine instances.
+                        spark-submit instructs the Spark agent software, on the master node,
+                        to spawn the driver which will execute the command using the jar.
+                        The master requests each worker agent to
+                        spawn one or more exector instances
+                        for the driver to use.
+                        Additionally, data nodes on each machine,
+                        and a name node or two on the master,
+                        support the Hadoop Distributed File System.
                     </aside>
                     </script>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
-                    ## Hadoop Distributed File System
+                    ## HDFS
                     <img src="img/hdfs.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
 
-                    * HDFS
-                      * uses part of local disk
-                      * organized in blocks
-                      * Name Node has directory
-                      * blocks distributed as needed
-                      * can be replicated (RAID)
-                      * workers use local blocks
-                      * without network penalty
+                    * Name Node has directory
+                    * Data Node manages blocks
+                    * like RAID
+
                     <aside class="notes">
                         HDFS uses part of each Datanode's disk
-                        to create a federated virtual disk
-                        that is shared between worker nodes.
-                        Access to data blocks that are local
-                        to a worker incur no network overhead.
+                        to create a federated virtual disk,
+                        managed by the Name Node,
+                        that is shared between worker Data Nodes.
+                        The disk is organized in blocks,
+                        usually 64, 128 or 512 megabytes,
+                        which are distributed as needed.
+                        Operations on local blocks incur no network overhead.
                     </aside>
                     </script>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
-                    ## Resilient Distributed Dataset
+                    ## RDD
                     <img src="img/rdd.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
 
-                    * RDD
-                      * immutable ⟹ parallelizable
-                      * partitioned to
-                      * executors and workers
-                      * resilient (just a recipe)
-                      * higher-order function API
-                      * e.g. map, filter, fold
-                      * spill to disk
+                    * immutable
+                    * higher-order function API
+                    * recipe
+                    * spill to disk
+
                     <aside class="notes">
-                        TBD
+                        The primary data structure in Spark is the
+                        Resilient Distributed Dataset or RDD.
+                        Conceptually, it is a array or list of objects,
+                        usually Plain Old Java Objects, or PoJos,
+                        that exists in sets called partitions.
+                        Partitions are distributed within executors,
+                        and over the executors of the cluster on different machines.
+                        Each RDD is immutable, which facilitates
+                        parallelizing operations.
+                        The RDD API is primarily higher-order functions,
+                        such as map, filter and fold,
+                        that take functions as arguments.
+                        In the example, from somewhere we get an RDD a of type X,
+                        a class with just two members, an id and a distance,
+                        and we create a second immutable RDD, b, by filtering
+                        that RDD to select objects that have an id starting with "B".
+                        The function passed as an argument is the
+                        "underscore dot startsWith B",
+                        which is idiomatic Scala syntax for an anonymous function.
+                        You can visualize that function being
+                        wrapped in a closure and sent to each
+                        executor that has one or more partitions of the RDD a,
+                        and each executor then applying that function
+                        to every element of the RDD to generate b.
+                        Some functions provide a "repartion" option, but not filter,
+                        so the results have the same partioning.
+                        A third RDD is generated, this time of type Double,
+                        by extracting the distance element from each object,
+                        with the anonymous function "underscore dot dist".
+                        Lastly, the distances are aggregated by the fold operation,
+                        operating over each partition, and then the results for all the partitions.
+                        Fold takes an initial value, that's the 0.0 in
+                        the curried first argument to fold, and another anonymous
+                        function underscore plus underscore, which does the sum.
+                        RDD resiliency comes from remembering
+                        the sequence of these operations as a recipe,
+                        that can be replayed as needed to recreate
+                        one immutable RDD from its immutable precursors -
+                        this is why immutability is important.
+                        If memory becomes exhausted,
+                        RDDs are discarded, keeping only their recipe.
+                        Caching or persisting an RDD locks that RDD in memory
+                        so the recipe can be discarded.
+                        If memory becomes exhausted,
+                        cached RDDs can spill to disk as serialized objects,
+                        and be re-hydrated when required.
                     </aside>
                     </script>
                 </section>
@@ -301,11 +368,28 @@
                     ## Pair RDD
                     <img src="img/pair_rdd.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
 
-                    * tuples, usually Tuple2
+                    * Tuple2
                     * usually primary key
-                    * RDD combining API, e.g. join, leftOuterJoin
+                    * RDD combining API, e.g.
+                      * join
+                      * leftOuterJoin
+                      * cogroup
+
                     <aside class="notes">
-                        TBD
+                        Some special operations are only available
+                        to RDD of Tuple2.
+                        A tuple is a wrapping class, that groups
+                        other objects and is supported by a bracket syntax in Scala.
+                        A Tuple2 is two tuple with a key and a value,
+                        similar to the Map-Reduce Key-Value construct.
+                        In the example, the RDD of type X is transformed by
+                        the keyBy function into a Tuple2 of type String and X,
+                        wth the anonymous function "underscore dot id".
+                        Often, the first element of the Tuple is the
+                        primary key.
+                        Pair RDD methods revolve around combining RDDs in some way,
+                        such as join, leftOuterJoin and cogroup,
+                        which have simililar meaning to the SQL operations of the same name.
                     </aside>
                     </script>
                 </section>
@@ -321,10 +405,318 @@
                     * actions
                       * eager & slow
                       * network ~500µs
-                      * groupBy,  leftOuterJoin
+                      * join, groupBy,  leftOuterJoin
+
                     <aside class="notes">
-                        TBD
+                        All these Spark methods fall into two categories,
+                        transformations and actions.
+                        Transformatons are local operations,
+                        where executors can operate independently,
+                        requiring no interaction with other executors.
+                        Evaluation is lazy, that is, it's done only when necessary.
+                        Mostly, these are in-memory operations,
+                        and hence quite fast - on the order of nano-seconds.
+                        These include map, filter and surprisingly, union.
+                        Actions are, conversely, non-local operations,
+                        where results need a cluster-wide concensus.
+                        Evaluation is eager, done immediately upon being encountered -
+                        so that other executors are not held up
+                        waiting for a lazy evaluation.
+                        These usually involve network traffic,
+                        called a shuffle,
+                        and are hence quite slow - on the order of micro-seconds.
+                        These include join, groupBy and leftOuterJoin.
+                        A lot of the tuning and optimization of a Spark
+                        program, involves eliminating these shuffle operations,
+                        either through different algorithms, different data structures
+                        or reordering operations for parallelization.
                     </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## CIMReader
+                    <img src="img/CIMReader.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; height:auto;">
+                    <aside class="notes">
+                        The CIMReader primarily allows a Spark program to
+                        read in one or more CIM RDF XML files.
+                        It produces RDD of CIM classes.
+                        It also provides some additonal CIM related functionality
+                        such as topological processing, and de-duplication,
+                        and some convenience utilities for non-Scala programs
+                        such as edge creation, and joining which won't be described here.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Class Hierarchy
+                    <img src="img/nested.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * RDD per CIM class
+                    * SQL Dataset
+                    * hierarchically nested
+                    * cached, Kyro serialized
+
+                    <aside class="notes">
+                        The CIMReader generates a globally named RDD per CIM class.
+                        There are over 1500 such classes.
+                        It also exposes these RDD as SQL Datasets - the new paradigm in Spark -
+                        for Spark SQL’s optimized execution engine.
+                        Each CIM subclass has its parent class encapsulated in it,
+                        somewhat like Russian dolls.
+                        In the example, the Conducting Equipment superclass
+                        is embedded in class Switch, both of which are in a equivalently-named RDD.
+                        This works up and down the hierarchy, so, one can access all switches,
+                        independant of whether they are
+                        Breaker, Disconnector, or Fuse subclasses by accessing the Switch RDD.
+                        These RDD are persisted, or cached, so the CIM file reading only occurs once.
+                        They can optionally be serialized with Kyro -
+                        a better format than plain Java object serializaton.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Use-Case – Asset Reports
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## GraphX & Pregel
+                    <img src="img/pregel.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    1. send initial message to all nodes
+                    2. for each edge of receiving nodes:
+                      * generate any new messages
+                    3. merge multiple messages
+                    4. send messages
+                    5. repeat 2-4 until no messages
+
+                    <aside class="notes">
+                        An extremely useful API is provided by GraphX.
+                        It can construct an efficient graph of edges and verticies of a network,
+                        which can be operated on by the Pregel algorithm.
+                        The distributed form of the Pregel algorithm, in higher-order functional form, takes
+                        three functions:
+                        a vertex updating function - handle incoming messages,
+                        a message generating function - propagate messages,
+                        and a message merging function - combine messages.
+                        The algorithm basically consists of
+                        sending an initial message to every node,
+                        then iterate these three functions until there are no new messages.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Topological Nodes
+                    <img src="img/topology_processor.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * propagate minimum vertex id
+                    * update:
+                      * RDD[TopologicalNode]
+                      * RDD[Terminal]
+                      * & superclasses
+                    * topological islands
+                      * all lines ⇐ 0Ω
+
+                    <aside class="notes">
+                        An example of Pregel processing is the newtork topology processor.
+                        In this case the vertex data and message are simply a node id,
+                        which is the hashCode of the element mRID - the primary key.
+                        The vertex program handles the incoming message by keeping the
+                        minimum vertex id.
+                        The send message program sends a message to
+                        any vertex with a greater vertex id,
+                        but only if they are topologically connected,
+                        either with a zero impedance cable or a closed switch.
+                        The merge message program,
+                        like the vertex program,
+                        keeps the minimum vertex id.
+                        When the algorithm terminates,
+                        each vertex is labeled with the minimum vertex id
+                        of all topologically connected vertecies,
+                        which is a unique identifier for a topological node.
+                        The program then updates the TopologicalNode RDD and
+                        the Terminal RDD and all superclasses.
+                        Topological island processing is the same,
+                        except all cables are considered zero impedance,
+                        and the TopologicalIsland RDD is updated.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Use-Case – Short Circuit Current
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Use-Case – Smart Meter Placement
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## GridLAB-D
+                    <img src="img/gridlabd.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * solve non-linear load flow
+                      * glm: network model
+                      * player: driving function
+                      * recorder: observer
+                    * open source
+                    * http://www.gridlabd.org
+
+                    <aside class="notes">
+                        Where non-linear effects must be considered,
+                        as is the case in most network analysis,
+                        a load-flow or power-flow numerical analysis must be performed.
+                        Programs that do this solve large sparse matrix equations
+                        of the Thevenin or Norton equivalent circuit for a network,
+                        and provide values or time-series of the variables from the equations,
+                        such as cable current and node voltage.
+                        Of the many programs considered, GridLAB-D was chosen because
+                        - it is platform neutral, running on linux as well as Windows and OSX,
+                        - it need not be licenced, allowing clusters to be expanded as needed,
+                        - it is open source, so there is the possibility of fixing show-stopper bugs,
+                          although one must know C/C++ to effectively do that.
+                        The nomenclature used by GridLAB-D includes:
+                        - glm - a file containing the network nodes, edges and configurations
+                        - configuration - a model of a transformer or cable
+                        - player - a CSV file of boundary conditions,
+                          essentially a time-series driving function for a variable
+                        - recorder - an output CSV file of the observed values of a variable
+                        - swing bus - infinite source or sink, a hard and fast pinning of a supply variable
+                        When the program is invoked it reads in the glm model and player files,
+                        and produces recorder files for requested variables.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Distributed GridLAB-D
+                    <img src="img/solve.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * export topological islands
+                    * RDD.pipe() ⟹ call native program (script) for each
+
+                    <aside class="notes">
+                        Since the entire network is too big to solve all at once,
+                        the problem is partitioned into transformer service areas (Trafokreise)
+                        and these are solved individually.
+                        Essentially, complete GridLAB-D packages for each topological
+                        island are exported to HDFS, and then these are solved in parallel.
+                        The RDD pipe method is used, which basically bales out
+                        to the operating system to execute a script for each element of an RDD.
+                        This is where the distributed parallel multi-threaded world of Spark
+                        boils down to the single-threaded isolated world of GridLAB-D.
+                        Since GridLAB-D knows nothing about Spark and HDFS,
+                        the script copies the files from HDFS to local disk,
+                        executes the gridlabd program and then copies
+                        the recorder files back to HDFS.
+                        The recorder files are then read into Spark with the CSV reader
+                        producing RDD of the recorder time series.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Use-Case – Maximum Feed-In Power Precalculation
+                    <img src="img/use-case_MaxFeedIn_Precalculation.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * use Pregel
+                    * label each node with
+                      * owning transformer
+                      * smallest cable I<sub>rated</sub> on path
+                      * path resistance
+                    * for each house, find P<sub>max</sub> where:
+                      * voltage exceeds +3% threshold
+                      * current exceeds cable rating
+                      * power exceeds transformer rating
+
+                    <aside class="notes">
+                        The use-case is to determine the maximum power
+                        for a new solar panel installation at each customer site. 
+                        If there are no other power sources
+                        (other photo-voltaic installations)
+                        the problem is a linear problem that can be solved with GraphX.
+                        So, ignoring any installed generators,
+                        basically label each customer location with the
+                        total line impedance from the supplying transformer,
+                        and the minimum cable ampacity encountered along the path.
+                        Then, knowing the transformer characteristic, it becomes an
+                        Ohm's law calculation to determine what power level input would
+                        lead to excessive voltage, excessive current or excessive power.
+                        If there really are no existing generators, we're done.
+                        Otherwise, this value is used as input to the next step.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Use-Case – Maximum Feed-In Power Simulation
+                    <img src="img/use-case_MaxFeedIn_Simulation.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial; float: right; margin-right: 2em; height:auto; max-width:50%;">
+
+                    * export islands with existing PV
+                    * execute gridlabd for each
+                    * stepped negative load, time-multiplexed
+                    * find P<sub>max</sub> where:
+                      * voltage exceeds +3% threshold
+                      * current exceeds cable rating
+                      * power exceeds transformer rating
+                    * two step sizes, 10kW and 1kW
+
+                    <aside class="notes">
+                        Where there are existing photo-voltaic installations
+                        it is necessary to perform a load-flow analysis.
+                        Each transformer service area with existing PV
+                        is exported and simulated using GridLAB-D.
+                        It is assumed that existing PV are generating at maximum capacity.
+                        To save time, the experiments for each house are
+                        time multilexed into one gridlabd execution -
+                        the first house is analyzed in the first five seconds,
+                        the second house in the next five, and so on.
+                        At each house, a stepped negative load is applied,
+                        with steps occurng at regular intervals.
+                        The number of steps (or maximum step) was determined by the precalculation done earlier.
+                        The recorder files from gridlabd which are
+                        the time series of node voltages for each customer location,
+                        the current in each cable and power through the transformer,
+                        are time-demultiplexed and then
+                        analyzed for the same excessive limits.
+                        By knowing the time at which an excess occurs,
+                        the step - and hence the power - that caused it can be computed.
+                        To save time and increase the resolution,
+                        the simulation is actually done in two phases,
+                        one of ten thousand Watts per step
+                        and a finer granularity phase of one thousand Watts per step.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## CIM & Spark Summary
+
+                    * high volume – compute large distribution networks
+                    * cluster computing – AWS and Azure
+                    * CIM deeply embedded – CIM data model used throughout
+                    * linear and nonlinear use-cases – Pregel and GridLAB-D
+                    * variety of languages and APIs
+
+                    <aside class="notes">
+                        In summary, Apache Spark is being used in
+                        large distribution network computations
+                        based on the CIM model and data file format.
+                        It is being used on both AWS and Azure to solve
+                        linear and non-linear use-cases, in Scala and R.
+                    </aside>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Questions
+
                     </script>
                 </section>
 			</div>
