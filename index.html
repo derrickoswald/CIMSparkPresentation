@@ -341,14 +341,14 @@
                             and we create a second immutable RDD, b, by filtering
                             that RDD to select objects that have an id starting with "B".
                             The function passed as an argument is the
-                            "underscore dot startsWith B",
+                            "underscore dot id dot startsWith B",
                             which is idiomatic Scala syntax for an anonymous function.
                             You can visualize that function being
                             wrapped in a closure and sent to each
                             executor that has one or more partitions of the RDD a,
                             and each executor then applying that function
                             to every element of the RDD to generate b.
-                            Some functions provide a "repartion" option, but not filter,
+                            Some functions provide a "repartition" option, but not filter,
                             so the results have the same partioning.
                             A third RDD is generated, this time of type Double,
                             by extracting the distance element from each object,
@@ -367,8 +367,8 @@
                             RDDs are discarded, keeping only their recipe.
                             Caching, or persisting, an RDD locks that RDD in memory
                             so the recipe can be discarded.
-                            If memory becomes exhausted,
-                            cached RDDs can spill to disk as serialized objects,
+                            In that case, if memory becomes exhausted,
+                            the cached RDDs can spill to disk as serialized objects,
                             and be re-hydrated when required.
                         </aside>
                     </script>
@@ -393,7 +393,7 @@
                             A Tuple2 is two tuple with a key and a value,
                             similar to the Map-Reduce Key-Value construct.
                             In the example, the RDD of type X is transformed by
-                            the keyBy function into a Tuple2 of type String and X,
+                            the keyBy function into a Tuple2 of types String and X,
                             wth the anonymous function "underscore dot id".
                             Often, the first element of the Tuple is the
                             primary key.
@@ -429,7 +429,8 @@
                             These include map, filter and surprisingly, union.
                             Actions are, conversely, non-local operations,
                             where results need a cluster-wide concensus.
-                            Evaluation is eager, done immediately upon being encountered -
+                            Evaluation is eager -
+                            that is, they're done immediately upon being encountered -
                             so that other executors are not held up
                             waiting for a lazy evaluation.
                             These usually involve network traffic,
@@ -589,7 +590,7 @@
                             such as cable current and node voltage.
                             Of the many programs considered, GridLAB-D was chosen because
                             - it is platform neutral, running on linux as well as Windows and OSX,
-                            - it need not be licenced, allowing clusters to be expanded as needed,
+                            - it needs no licence, allowing clusters to be expanded as needed,
                             - it is open source, so there is the possibility of fixing show-stopper bugs,
                               although one must know C/C++ to effectively do that.
                             The nomenclature used by GridLAB-D includes:
