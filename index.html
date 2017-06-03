@@ -531,14 +531,40 @@
                 <section data-markdown>
                     <script type="text/template">
                         ## Use-Case – Asset Reports
-Ninja SQL query goes here.
-                        <aside class="notes" data-markdown>
+
+                        ```SQL
+                            select
+                                t.ConductingEquipment.Equipment.PowerSystemResource.IdentifiedObject.mRID,
+                                l.installationDate,
+                                p.xPosition,
+                                p.yPosition
+                            from
+                                Asset a,
+                                LifecycleDate l,
+                                PositionPoint p,
+                                PowerTransformer t
+                            where
+                                t.ConductingEquipment.Equipment.PowerSystemResource.Location = p.Location and
+                                p.sequenceNumber = 0 and
+                                a.PowerSystemResources[0] = t.ConductingEquipment.Equipment.PowerSystemResource.IdentifiedObject.mRID and
+                                a.lifecycle = l.BasicElement.mRID
+                        ```
+
+                        |    mRID|installationDate|    xPosition|    yPosition|
+                        |--------|----------------|-------------|-------------|
+                        |TRA12717|            2008|7.46252758059|46.9964952624|
+                        | TRA2739|            1983|7.38499507626|46.9869053333|
+                        | TRA7419|            1973|7.48111297055|46.9604453884|
+                        |TRA17413|            2015|7.34330544480|47.0007609949|
+                        |TRA12906|            2010|7.47843983575|46.9774132191|
+
+                        <aside class="notes" data-markdown="">
                             This use case is a simple query for transformers,
                             their age and their spatial location.
                             This would be suitable for a map display
                             with colored dots for example.
                             We use SQL, but the same effect could be achieved
-                            with Resilient Distributed Datsets (RDDs).
+                            with Resilient Distributed Datasets (RDDs).
                             The advantage of SQL is that much of the Spark
                             optimization has been built into the Spark SQL
                             optimizer.
@@ -845,6 +871,7 @@ Ninja SQL query goes here.
 				autoPlayMedia: window.location.search == "?audio",
 				autoSlide: window.location.search == "?audio" ? 10000 : 0,
 				autoSlideMethod: Reveal.navigateRight,
+				markdown: { gfm: true },
 				width: "100%",
 				height: "100%",
 				margin: 0,

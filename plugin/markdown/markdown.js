@@ -62,7 +62,8 @@
         // look for a <script> or <textarea data-template> wrapper
         var template = section.querySelector( '[data-template]' ) || section.querySelector( 'script' );
 
-        section.removeChild(template)
+        if (null != template)
+            section.removeChild(template)
 
         return section.innerHTML;
     }
