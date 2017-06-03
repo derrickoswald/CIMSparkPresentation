@@ -4053,7 +4053,7 @@
 			// playbackRate is accounted for in the duration.
 			if( currentSlide.querySelectorAll( '.fragment' ).length === 0 ) {
 				toArray( currentSlide.querySelectorAll( 'video, audio' ) ).forEach( function( el ) {
-					if( el.hasAttribute( 'data-autoplay' ) ) {
+					if( config.autoPlayMedia || el.hasAttribute( 'data-autoplay' ) ) {
 						if( autoSlide && (el.duration * 1000 / el.playbackRate ) > autoSlide ) {
 							autoSlide = ( el.duration * 1000 / el.playbackRate ) + 1000;
 						}

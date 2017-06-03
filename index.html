@@ -29,12 +29,18 @@
                     <script type="text/template">
                         <img src="img/splash_page.svg" style="border-width: 0px; background-color: transparent; box-shadow: initial;">
 
-                        # Network Analysis and Simulation using Apache Spark on Compute Clusters
+                        #### Network Analysis and Simulation using Apache Spark on Compute Clusters
+
+                        ###### Derrick Oswald
 
                         <aside class="notes">
                             Network Analysis and Simulation using Apache Spark on Compute Clusters
                         </aside>
+
                     </script>
+                    <audio>
+                        <source src="media/splash.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -67,8 +73,10 @@
                             for non-linear load-flow,
                             with a distributed energy resource use-case.
                         </aside>
-
                     </script>
+                    <audio>
+                        <source src="media/overview.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -92,6 +100,9 @@
                         </aside>
 
                     </script>
+                    <audio>
+                        <source src="media/cim.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -123,6 +134,9 @@
                             - and interior details at a ServiceLocation like Customer and Meter 
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/model.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section>
                     <section data-markdown>
@@ -147,6 +161,9 @@
                             - etc.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/types.mp3" type="audio/mp3">
+                    </audio>
                     </section>
                     <section>
                         <div>Electrical</div>
@@ -281,6 +298,9 @@
                             and a command line.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/spark.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -822,6 +842,9 @@ Ninja SQL query goes here.
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				autoPlayMedia: window.location.search == "?audio",
+				autoSlide: window.location.search == "?audio" ? 10000 : 0,
+				autoSlideMethod: Reveal.navigateRight,
 				width: "100%",
 				height: "100%",
 				margin: 0,

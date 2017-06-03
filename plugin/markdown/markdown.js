@@ -54,6 +54,19 @@
 
 	}
 
+   /**
+     * Retrieves the non-markdown contents of a slide section element.
+     */
+    function getNonMarkdownFromSlide( section ) {
+
+        // look for a <script> or <textarea data-template> wrapper
+        var template = section.querySelector( '[data-template]' ) || section.querySelector( 'script' );
+
+        section.removeChild(template)
+
+        return section.innerHTML;
+    }
+
 	/**
 	 * Given a markdown slide section element, this will
 	 * return all arguments that aren't related to markdown
@@ -264,7 +277,9 @@
 
 			}
 			else {
-				section.innerHTML = createMarkdownSlide( getMarkdownFromSlide( section ) );
+			    var md = createMarkdownSlide( getMarkdownFromSlide( section ) )
+			    var nmd = getNonMarkdownFromSlide( section );
+				section.innerHTML = md + nmd;
 			}
 		}
 
@@ -355,8 +370,9 @@
 
 				var notes = section.querySelector( 'aside.notes' );
 				var markdown = getMarkdownFromSlide( section );
+                var nonmarkdown = getNonMarkdownFromSlide( section );
 
-				section.innerHTML = marked( markdown );
+				section.innerHTML = marked( markdown ) + nonmarkdown;
 				addAttributes( 	section, section, null, section.getAttribute( 'data-element-attributes' ) ||
 								section.parentNode.getAttribute( 'data-element-attributes' ) ||
 								DEFAULT_ELEMENT_ATTRIBUTES_SEPARATOR,
