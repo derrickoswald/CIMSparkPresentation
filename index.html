@@ -328,6 +328,9 @@
                             support the Hadoop Distributed File System.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/stack.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -350,6 +353,9 @@
                             incur no network overhead.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/hdfs.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -374,10 +380,10 @@
                             The RDD API is primarily higher-order functions,
                             that is, functions that take functions as parameters,
                             such as map, filter and fold.
-                            In the example, we have a a class X with just two members,
+                            In the example, we have a class X with just two members,
                             an id and a distance.
-                            We get an immutable RDD a of type X from somewhere,
-                            and from that we can create a second immutable RDD, b,
+                            We get an immutable RDD 'a' of type X from somewhere,
+                            and from that we can create a second immutable RDD, 'b',
                             by filtering a to select objects that have
                             an id starting with "B".
                             The function passed as an argument is the
@@ -385,12 +391,12 @@
                             which is idiomatic Scala syntax for an anonymous function.
                             You can visualize that function being
                             wrapped in a closure and sent to each
-                            executor that has one or more partitions of the RDD a,
+                            executor that has one or more partitions of the RDD 'a',
                             and each executor then applying that function
-                            to every element of the RDD to generate b.
+                            to every element of the RDD to generate 'b'.
                             Some functions provide "repartition" options, but not filter,
                             so the results have the same partioning.
-                            A third RDD is generated, this time of type Double,
+                            A third RDD 'c' is generated, this time of type Double,
                             by extracting the distance element from each object,
                             with the anonymous function "underscore dot dist".
                             Lastly, the distances are aggregated by the fold operation,
@@ -413,6 +419,9 @@
                             and be re-hydrated when required.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/rdd.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -443,6 +452,9 @@
                             which have similar meaning to the SQL operations of the same name.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/pair.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -484,6 +496,9 @@
                             or reordering operations for parallelization.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/transformations_and_actions.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -501,6 +516,9 @@
                             - and edge creation
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/CIMReader.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -527,6 +545,9 @@
                             These RDD are cached, so the CIM file reading only occurs once.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/hierarchy.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -559,7 +580,7 @@
                         |TRA12906|            2010|7.47843983575|46.9774132191|
 
                         <aside class="notes" data-markdown="">
-                            This use case is a simple query for transformers,
+                            This use case is a simple report of transformers,
                             their age and their spatial location.
                             This would be suitable for a map display
                             with colored dots for example.
@@ -569,9 +590,12 @@
                             optimization has been built into the Spark SQL
                             optimizer.
                             There are multiple joins over the PowerTransformer,
-                            Asset, LifecycleDate, Location, and PositionPoint tables.
+                            Asset, LifecycleDate, and PositionPoint tables.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/use-case_asset.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -588,20 +612,23 @@
                         <aside class="notes" data-markdown>
                             An extremely useful API is provided by GraphX.
                             As its name implies,
-                            it can construct an graph of edges and verticies of a network,
-                            which can be operated on by the Pregel algorithm.
-                            The distributed form of the Pregel algorithm,
+                            it can construct a graph of edges and verticies of a network,
+                            which can then be operated on by the Pregel algorithm.
+                            The distributed Pregel algorithm,
                             in higher-order functional form,
                             takes three functions:
                             - a vertex updating function - to handle incoming messages to a vertex,
                             - a message generating function - propagate messages across edges,
                             - and a message merging function - to combine messages to the same vertex
                             The algorithm basically consists of
-                            sending an initial message to every node,
+                            sending an initial message to every vertex,
                             then iterating over these three functions
                             until there are no new messages generated.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/graphx.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -640,9 +667,12 @@
                             the Terminal RDD and all superclasses.
                             Topological island processing is the same,
                             except all cables are considered zero impedance,
-                            and the TopologicalIsland RDD is updated.
+                            and the TopologicalIsland RDD is the one that's updated.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/topological_processing.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -672,6 +702,9 @@
                             at every house.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/use-case_short-circuit_current.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -715,6 +748,9 @@
                             and produces recorder files for requested variables.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/gridlabd.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -725,7 +761,7 @@
                         * RDD.pipe() ⟹ call native program (script) for each
 
                         <aside class="notes" data-markdown>
-                            Since the entire network is too big to solve all at once,
+                            Since the entire network is too large to solve all at once,
                             the problem is partitioned into transformer service areas
                             (Trafokreise in German)
                             and these are solved individually.
@@ -739,7 +775,7 @@
                             boils down to the single-core, single-threaded
                             isolated world of GridLAB-D.
                             Since GridLAB-D knows nothing about Spark and HDFS,
-                            the script first copies the .glm and recorder files
+                            the script first copies the .glm and player files
                             from HDFS to local disk,
                             executes the gridlabd program and then copies
                             the recorder files back to HDFS.
@@ -749,6 +785,9 @@
                             double or complex values.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/distributed_gridlabd.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -786,6 +825,9 @@
                             input to the next step, which is simulation.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/use-case_maximum_feed-in_power-precalculation.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -803,6 +845,7 @@
 
                         <aside class="notes" data-markdown>
                             Where there are existing photo-voltaic installations
+                            in a transformer service area
                             it is necessary to perform a load-flow analysis.
                             Each transformer service area that has existing PV
                             is exported and simulated using GridLAB-D.
@@ -831,6 +874,9 @@
                             and then a finer granularity phase of one thousand Watts per step.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/use-case_maximum_feed-in_power-simulation.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
@@ -850,11 +896,15 @@
                             linear and non-linear use-cases, in Scala and R.
                         </aside>
                     </script>
+                    <audio>
+                        <source src="media/summary.mp3" type="audio/mp3">
+                    </audio>
                 </section>
                 <section data-markdown>
                     <script type="text/template">
                       ## Questions
 
+                      derrick.oswald@9code.ch
                     </script>
                 </section>
 			</div>
@@ -869,7 +919,7 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				autoPlayMedia: window.location.search == "?audio",
-				autoSlide: window.location.search == "?audio" ? 10000 : 0,
+				autoSlide: window.location.search == "?audio" ? 7500 : 0,
 				autoSlideMethod: Reveal.navigateRight,
 				markdown: { gfm: true },
 				width: "100%",
