@@ -35,6 +35,8 @@
 
                         <aside class="notes">
                             Network Analysis and Simulation using Apache Spark on Compute Clusters
+                            by
+                            Derrick Oswald
                         </aside>
 
                     </script>
@@ -272,8 +274,6 @@
                         * AWS, Azure
                         * Scala, Python, R, Java
 
-                        $ spark-submit ⟹ java jar & command
-
                         <aside class="notes" data-markdown>
                             Turning now from data to applications...
                             Apache Spark is software that is normally
@@ -384,7 +384,7 @@
                             an id and a distance.
                             We get an immutable RDD 'a' of type X from somewhere,
                             and from that we can create a second immutable RDD, 'b',
-                            by filtering a to select objects that have
+                            by filtering 'a' to select objects that have
                             an id starting with "B".
                             The function passed as an argument is the
                             "underscore dot id dot startsWith B",
@@ -612,7 +612,7 @@
                         <aside class="notes" data-markdown>
                             An extremely useful API is provided by GraphX.
                             As its name implies,
-                            it can construct a graph of edges and verticies of a network,
+                            it can construct a graph of edges and vertices of a network,
                             which can then be operated on by the Pregel algorithm.
                             The distributed Pregel algorithm,
                             in higher-order functional form,
